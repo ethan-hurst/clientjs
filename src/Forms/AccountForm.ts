@@ -1,5 +1,5 @@
 export class AccountForm {
-  static async onload(context: Xrm.Events.EventContext): Promise<void> {
+  static async onLoad(context: Xrm.Events.EventContext): Promise<void> {
     context
       .getFormContext()
       .getAttribute("name")
@@ -7,4 +7,9 @@ export class AccountForm {
         console.log("name onchange");
       });
   }
+
+  static async onSave(context: Xrm.Events.EventContext): Promise<void>{
+    console.debug('name OnSave')
+  }
 }
+

@@ -19,7 +19,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "ClientHooks.js",
     // Set this to your namespace e.g. cds.ClientHooks
-    library: ["cds", "ClientHooks"],
+    library: ["cr787_", "cr787_ClientHooks"],
     libraryTarget: "var",
   },
 };
