@@ -1,0 +1,12 @@
+{
+  "entities": [
+    "account",
+    "contact",
+    "systemuser"
+  ],
+  "actions": [],
+  "functions": [],
+  "output": {
+    "outputRoot": "./src/dataverse-gen"
+  }
+}

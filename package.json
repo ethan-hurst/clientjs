@@ -27,5 +27,8 @@
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.2",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "dataverse-ify": "^1.0.10"
   }
 }
