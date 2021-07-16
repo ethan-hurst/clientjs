@@ -76,6 +76,8 @@ export const accountMetadata = {
     owningteam: ["mscrm.team"],
     owningbusinessunit: ["mscrm.businessunit"],
     ownerid: ["mscrm.principal"],
+    new_PolymorphicTestId_email: ["mscrm.email"],
+    new_PolymorphicTestId_contact: ["mscrm.contact"],
     modifiedonbehalfby: ["mscrm.systemuser"],
     modifiedby: ["mscrm.systemuser"],
     masterid: ["mscrm.account"],
@@ -206,6 +208,10 @@ export const enum AccountAttributes {
   ModifiedOnBehalfByName = "modifiedonbehalfbyname",
   ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame",
   Name = "name",
+  new_PolymorphicTestId = "new_polymorphictestid",
+  new_PolymorphicTestIdName = "new_polymorphictestidname",
+  new_PolymorphicTestIdType = "new_polymorphictestidtype",
+  new_PolymorphicTestIdYomiName = "new_polymorphictestidyominame",
   NumberOfEmployees = "numberofemployees",
   OnHoldTime = "onholdtime",
   OverriddenCreatedOn = "overriddencreatedon",
@@ -503,6 +509,14 @@ export interface Account extends IEntity {
   modifiedonbehalfbyyominame?: string | null;
   // Account Name [Required] StringType Type the company or business name.
   name?: string;
+  // Polymorphic Test LookupType
+  new_polymorphictestid?: import("dataverse-ify").EntityReference | null;
+  //  StringType
+  new_polymorphictestidname?: string | null;
+  //  EntityNameType
+  new_polymorphictestidtype?: string | null;
+  //  StringType
+  new_polymorphictestidyominame?: string | null;
   // Number of Employees IntegerType Type the number of employees that work at the account for use in marketing segmentation and demographic analysis.
   numberofemployees?: number | null;
   // On Hold Time (Minutes) IntegerType Shows how long, in minutes, that the record was on hold.

@@ -2,7 +2,9 @@
   "entities": [
     "account",
     "contact",
-    "systemuser"
+    "systemuser",
+    "dev_budgetcategory",
+    "dev_monthlybudget"
   ],
   "actions": [],
   "functions": [],

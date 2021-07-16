@@ -8,7 +8,9 @@
     "lint:fix": "npm run lint -- --fix",
     "build": "webpack --config webpack.dev.js",
     "start": "webpack --config webpack.dev.js --watch",
-    "dist": "webpack --config webpack.prod.js"
+    "dist": "webpack --config webpack.prod.js",
+    "typeGen": "npx dataverse-gen init",
+    "auth": "npx dataverse-auth"
   },
   "keywords": [],
   "author": "",
